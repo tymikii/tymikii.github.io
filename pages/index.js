@@ -3,9 +3,9 @@ import Link from "next/link";
 const Index = () => {
   return (
     <>
-      <div>Welcome to Next.js!</div>
-      <Link href="/linkSample">
-        <a>link Sample Page</a>
+      <div>tymikii.github.io</div>
+      <Link href="/ankikun/index.html">
+        <a>暗記くん</a>
       </Link>
     </>
   );

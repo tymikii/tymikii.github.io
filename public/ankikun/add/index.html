@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/reset.css" />
+    <title>単語を追加</title>
+  </head>
+  <body>
+    <header>
+      <div class="header_inner">
+        <h1>暗記くん</h1>
+        <ul class="header_list">
+          <li>追加</a></li>
+          <li><a href="../check/index.html">テスト</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="addpage_container">
+      <div class="input_wrapper">
+        <input type="text" class="en_input" />
+        <input type="text" class="ja_input" />
+        <button class="add_button">単語を追加</button>
+      </div>
+      <table border="1" class="word_table">
+        <thead>
+          <tr>
+            <th scope="col">English</th>
+            <th scope="col">Japanese</th>
+            <th scope="col">正解</th>
+            <th scope="col">不正解</th>
+            <th scope="col">削除</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <script src="../script/add.js"></script>
+  </body>
+</html>

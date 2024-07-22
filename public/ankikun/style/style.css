@@ -1,0 +1,137 @@
+body {
+}
+a {
+  text-decoration: none;
+}
+li {
+  display: inline;
+}
+a:hover,
+button:hover {
+  opacity: 0.7;
+}
+
+/* header */
+header {
+  background-color: aliceblue;
+}
+.header_inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 800px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+.header_list {
+  display: flex;
+  gap: 40px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* container */
+.container {
+  display: grid;
+  width: 100%;
+  place-items: center;
+  width: 400px;
+  margin: 0 auto;
+  padding: 50px;
+}
+.card_container {
+  width: 100%;
+  height: 144px;
+}
+.addpage_container {
+  width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+/* card */
+.card {
+  position: relative;
+  display: block;
+}
+.front,
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  border: 3px solid gainsboro;
+  border-radius: 20px;
+  backface-visibility: hidden;
+  transition: all 0.6s;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 4;
+}
+.front {
+  background-color: #f0f0f0;
+}
+.back {
+  background-color: #d8edf7;
+  transform: rotateX(180deg);
+}
+.active .front {
+  transform: rotateX(-180deg);
+}
+.active .back {
+  transform: rotateX(0);
+}
+
+/* button */
+.button_container {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+.button_correct,
+.button_incorrect,
+.add_button {
+  background-color: powderblue;
+  min-width: 120px;
+  text-align: center;
+  height: 2.4em;
+}
+
+/* input */
+.input_wrapper {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+input {
+  height: 2.4em;
+  max-width: 100%;
+  padding: 0 16px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 0 0 1px #ccc inset;
+}
+
+/* table */
+.word_table {
+  width: 100%;
+  line-height: 3;
+  margin-top: 50px;
+}
+th {
+  border: solid 1px #ccc;
+  text-align: center;
+  background-color: aliceblue;
+}
+td {
+  border: solid 1px #ccc;
+  text-align: center;
+}
